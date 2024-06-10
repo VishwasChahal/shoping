@@ -1,0 +1,153 @@
+/* Website Template by freewebsitetemplates.com */
+@font-face {
+    font-family: 'poller_oneregular';
+    src: url('../fonts/pollerone/pollerone-webfont.eot');
+    src: url('../fonts/pollerone/pollerone-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pollerone/pollerone-webfont.woff') format('woff'),
+         url('../fonts/pollerone/pollerone-webfont.ttf') format('truetype'),
+         url('../fonts/pollerone/pollerone-webfont.svg#poller_oneregular') format('svg');
+}
+@font-face {
+    font-family: 'leckerli_oneregular';
+    src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot');
+    src: url('../fonts/leckerlione/leckerlione-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leckerlione/leckerlione-regular-webfont.woff') format('woff'),
+         url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
+}
+
+body {
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+a {
+    text-decoration: none;         
+    color: #0ba39c;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1fc3bc;
+}
+
+#header {
+    background-color: #000000; /* Black background */
+    padding: 20px 40px; /* Add padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items at the start and end */
+    align-items: center; /* Center vertically */
+}
+
+#header p {
+    font-size: 24px; /* Increase font size */
+    color: #ffffff; /* White text color */
+    margin: 0; /* Remove default margin */
+}
+
+#navigation {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+#navigation li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add spacing between menu items */
+}
+
+#navigation li:first-child {
+    margin-left: 0; /* Remove margin for the first item */
+}
+
+#navigation li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Increase font size */
+}
+
+#navigation li a:hover {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+
+.sections-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 0 10px;
+    max-width: 960px;
+}
+
+.section {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex:90%; /* Increased width */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+}
+
+.section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#footer {
+    background: #252525;
+    padding: 2px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#footer div {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#footer div p {
+    margin: 0;
+    padding: 10px ;
+    line-height: 1.4;
+}
+
+#footer div ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+#footer div ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#footer div ul li a {
+    background: url(../images/icons.jpg) no-repeat 0 0;
+    display: block;
+    height: 20px;
+    width: 20px;
+    text-indent: -9999px;
+    transition: background-position 0.3s;
+}
+
