@@ -45,3 +45,10 @@ function toggleSubmenu(menuItem, index) {
         menuItem.lastChild.style.backgroundColor = 'rgba(0,0,0,0.8)';
     }
 }
+
+// Ensure navigation menu is visible on Android devices
+const userAgent = navigator.userAgent.toLowerCase();
+if (userAgent.indexOf('android') > -1) {
+    const navigation = document.getElementById('navigation');
+    navigation.style.display = 'block';
+}
