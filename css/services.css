@@ -1,0 +1,61 @@
+/* Remove default list styles */
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for service boxes */
+.service-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #000; /* Set default text color to black */
+    text-align: center; /* Center text content */
+    text-decoration: none; /* Remove underline from icons */
+    position: relative; /* Ensure z-index works correctly */
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+}
+
+/* Styling for service icons */
+.service-box .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #555; /* Set default icon color */
+    display: block;
+}
+
+/* Styling for service descriptions */
+.service-box .desc {
+    text-align: center;
+}
+
+/* Styling for service boxes on small screens */
+@media (max-width: 768px) {
+    .service-box {
+        margin-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+        float: left;
+    }
+}
+
+/* Hover effect for service boxes */
+.service-box:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+}
+
+/* Additional hover effect for the service title */
+.service-box:hover .icon {
+    color: #fff; /* Change icon color on hover */
+}
