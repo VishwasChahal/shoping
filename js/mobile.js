@@ -21,12 +21,6 @@ window.onload = function() {
             createSubmenuButton(menuItems[i], i);
         }
     }
-
-    // Detect if the user is accessing the page from an Android device
-    const isAndroid = navigator.userAgent.toLowerCase().indexOf('android') > -1;
-    if (isAndroid) {
-        navigation.style.display = 'block';
-    }
 };
 
 function createSubmenuButton(menuItem, index) {
