@@ -8,10 +8,10 @@ window.onload = function() {
         const style = navigation.getAttribute('style');
         if (style) {
             navigation.removeAttribute('style');
-            mobileNavigation.style.backgroundImage = 'url(images/mobile-menu.png)';
+            mobileNavigation.style.backgroundImage = 'url(images1/mobile-menu.png)';
         } else {
             navigation.style.display = 'block';
-            mobileNavigation.style.backgroundImage = 'url(images/mobile-close.png)';
+            mobileNavigation.style.backgroundImage = 'url(images1/mobile-close.png)';
         }
     });
 
