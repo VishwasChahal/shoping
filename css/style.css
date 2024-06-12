@@ -36,33 +36,39 @@ p {
 	padding: 0;
 }
 p a {
-	color: #252525;
+	color: #ffffff;
 	text-decoration: underline;
 }
 p a:hover {
-	color: #898989;
+	color: #000000;
 }
+/* Adjust the header logo container */
 #header {
-	margin: 0 auto;
-	padding: 44px 0 50px;
-	text-align: center;
-	width: 960px;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 0;
+    text-align: center; /* Center the logo container */
 }
+
+/* Center and size the logo container */
 #header a.logo {
-	display: block;
-	margin: 0 auto;
-	padding: 0;
-	width: 340px;
+    display: block;
+    margin: 0 auto;
+    width: 600px; /* Adjust the width as needed for smaller logo size */
 }
+
+/* Ensure the logo image fits within its container */
 #header a.logo img {
-	border: 0;
-	display: block;
-	margin: 0;
-	padding: 0;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
+
 #header ul {
 	margin: 0;
-	padding: 56px 0 0;
+	
 }
 #header ul li {
 	display: inline;
@@ -345,21 +351,56 @@ p a:hover {
 	cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-    .swiper-slide {
-        height: 60vw; /* Set height relative to width */
-        max-height: 500px; /* Set maximum height to maintain aspect ratio */
-    }
+
+
+
+.swiper-container {
+    width: 100%; /* Full width */
+    height: 400px; /* Set a fixed height, adjust as needed */
+    margin: 0 auto; /* Center the container */
 }
 
+/* Swiper wrapper */
+.swiper-wrapper {
+    display: flex;
+}
 
+/* Swiper slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Swiper slide images */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container, maintaining aspect ratio */
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-container {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+}
 
 @media screen and (max-width: 768px) {
-    .swiper-slide {
-        height: 60vw; /* Set height relative to width */
-        max-height: 500px; /* Set maximum height to maintain aspect ratio */
+    .swiper-container {
+        height: 300px; /* Adjust height for smaller screens */
     }
 }
+
+@media screen and (max-width: 480px) {
+    .swiper-container {
+        height: 200px; /* Adjust height for even smaller screens */
+    }
+}
+
+
+
+
+
 
 
 /* Style for the auth links */
