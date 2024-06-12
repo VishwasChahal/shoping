@@ -5,11 +5,12 @@
     padding: 10px 0;
     font-family: 'Arial', sans-serif;
     clear: both; /* Ensure the footer clears previous floats */
+    text-align: center; /* Center the text */
 }
 
 #footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center content horizontally */
     flex-wrap: wrap;
     max-width: 600px;
     margin: 0 auto;
@@ -17,8 +18,9 @@
 }
 
 .footer-section {
-    flex: 300px;
+    flex: 1; /* Let sections fill available space */
     margin: 20px;
+    text-align: center; /* Center text */
 }
 
 .footer-section h2,
@@ -76,9 +78,7 @@
 }
 
 .footer-bottom {
-    text-align: center;
     padding: 20px;
     background-color: #000000;
     font-size: 0.9em;
 }
-

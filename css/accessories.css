@@ -1,0 +1,125 @@
+/* Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #000000; /* Setting default text color */
+}
+
+/* Header */
+#header {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0); /* Adding shadow for depth */
+}
+
+#header .logo img {
+    max-width: 200px; /* Limiting logo width for better scaling */
+}
+
+.hero {
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white */
+    padding: 1px; /* Add padding for spacing */
+}
+
+/* Hero Section */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjusting background transparency */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto; /* Centering horizontally */
+    color: #fff; /* Setting text color */
+    text-align: center; /* Centering text */
+}
+
+/* Products Section */
+.products {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusting grid layout */
+    gap: 1rem;
+}
+
+.product-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adding shadow for depth */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    transition: transform 0.3s ease; /* Adding smooth hover effect */
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Applying hover effect */
+}
+
+.product-info {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.product-card h3 {
+    margin: 0;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #222; /* Darkening footer background */
+    color: #fff; /* Setting text color */
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1 1 300px; /* Setting flex properties for responsiveness */
+    margin-bottom: 1rem; /* Adding space between sections */
+}
+
+.logo-text {
+    font-size: 1.5rem; /* Increasing logo text size */
+    font-weight: bold; /* Making logo text bold */
+    margin-bottom: 1rem; /* Adding space below logo text */
+}
+
+.contact span {
+    display: block; /* Ensuring each contact info is on a new line */
+    margin-bottom: 0.5rem; /* Adding space between contact info */
+}
+
+.socials a {
+    color: #fff; /* Setting social icon color */
+    font-size: 1.2rem; /* Increasing social icon size */
+    margin-right: 0.5rem; /* Adding space between social icons */
+}
+
+.socials a:hover {
+    color: #ccc; /* Changing social icon color on hover */
+}

@@ -59,3 +59,9 @@ ul, li {
 .service-box:hover .icon {
     color: #fff; /* Change icon color on hover */
 }
+
+.service-box-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Optional: Keep the text color consistent with other elements */
+}
