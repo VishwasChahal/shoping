@@ -1,0 +1,84 @@
+/* Footer Styles */
+#footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    font-family: 'Arial', sans-serif;
+    clear: both; /* Ensure the footer clears previous floats */
+}
+
+#footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 10px; /* Add padding to the sides */
+}
+
+.footer-section {
+    flex: 300px;
+    margin: 20px;
+}
+
+.footer-section h2,
+.footer-section h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.footer-section h1.logo-text {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-section .contact span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-section .contact span i {
+    margin-right: 10px;
+}
+
+.footer-section .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.footer-section .socials a:hover {
+    color: #f4f4f4;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section ul a:hover {
+    color: #f4f4f4;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    font-size: 0.9em;
+}
+
