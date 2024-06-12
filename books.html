@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link rel="stylesheet" href="css/accessories.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <a href="index.html" class="logo">
+            <img src="images1/Remove background project(1).png" alt="Logo">
+        </a>
+    </div>
+<br><br>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Best Accessories</h1>
+            <p>Upgrade your style with our latest collection</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="product-card" id="horror" style="background-image: url('images1/books/horror.jpg');">
+            <div class="product-info">
+                <h3>Horror</h3>
+            </div>
+        </div>
+        <br>
+        <div class="product-card" id="romance" style="background-image: url('images1/books/romance.jpg');">
+            <div class="product-info">
+                <h3>Romance</h3>
+            </div>
+        </div>
+        <br>
+        <div class="product-card" id="historical" style="background-image: url('images1/books/historical.jpg');">
+            <div class="product-info">
+                <h3>Historical</h3>
+            </div>
+        </div>
+        <br>
+        <div class="product-card" id="fantasy" style="background-image: url('images1/books/fantasy.jpg');">
+            <div class="product-info">
+                <h3>Fantasy</h3>
+            </div>
+        </div>
+        <br>
+        <div class="product-card" id="science-fiction" style="background-image: url('images1/books/science.jpg');">
+            <div class="product-info">
+                <h3>Science Fiction</h3>
+            </div>
+        </div>
+        <br>
+    </section>
+    
+    <script>
+        const horrorImages = [
+            'images1/books/horror.jpg',
+            'images1/books/horror1.jpg',
+            'images1/books/horror2.jpg'
+        ];
+    
+        const romanceImages = [
+            'images1/books/romance.jpg',
+            'images1/books/romance1.jpg',
+            'images1/books/romance2.jpg'
+        ];
+    
+        const historicalImages = [
+            'images1/books/historical.jpg',
+            'images1/books/historical1.jpg',
+            'images1/books/historical2.jpg'
+        ];
+    
+        const fantasyImages = [
+            'images1/books/fantasy.jpg',
+            'images1/books/fantasy1.jpg',
+            'images1/books/fantasy2.jpg'
+        ];
+    
+        const scienceFictionImages = [
+            'images1/books/science.jpg',
+            'images1/books/science1.jpg',
+            'images1/books/science2.jpg'
+        ];
+    
+        let horrorIndex = 0;
+        let romanceIndex = 0;
+        let historicalIndex = 0;
+        let fantasyIndex = 0;
+        let scienceFictionIndex = 0;
+    
+        function changeBackground() {
+            document.getElementById('horror').style.backgroundImage = `url('${horrorImages[horrorIndex]}')`;
+            document.getElementById('romance').style.backgroundImage = `url('${romanceImages[romanceIndex]}')`;
+            document.getElementById('historical').style.backgroundImage = `url('${historicalImages[historicalIndex]}')`;
+            document.getElementById('fantasy').style.backgroundImage = `url('${fantasyImages[fantasyIndex]}')`;
+            document.getElementById('science-fiction').style.backgroundImage = `url('${scienceFictionImages[scienceFictionIndex]}')`;
+    
+            horrorIndex = (horrorIndex + 1) % horrorImages.length;
+            romanceIndex = (romanceIndex + 1) % romanceImages.length;
+            historicalIndex = (historicalIndex + 1) % historicalImages.length;
+            fantasyIndex = (fantasyIndex + 1) % fantasyImages.length;
+            scienceFictionIndex = (scienceFictionIndex + 1) % scienceFictionImages.length;
+        }
+    
+        setInterval(changeBackground, 2000); // Change every 3 seconds
+    </script>
+    
+    
+
+    <script src="js/script.js"></script>
+
+    <div id="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Products Wala</h1>
+                <h4>A place where you can find any things on the tips of your finger.</h4>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; +123-456-7890</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; vishwaschahal01@gmail.com</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; collegers.in | Designed by Vishwas
+        </div>
+    </div>
+</body>
+</html>
